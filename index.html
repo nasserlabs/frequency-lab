@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency Lab - Studio de Musique Indépendant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation fixe -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-logo">FREQUENCY LAB</div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link active" data-tab="accueil">Accueil</a></li>
+                <li><a href="#projets" class="nav-link" data-tab="projets">Projets</a></li>
+                <li><a href="#studio" class="nav-link" data-tab="studio">Le Studio</a></li>
+                <li><a href="#contact" class="nav-link" data-tab="contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container principal -->
+    <main class="main-container">
+        
+        <!-- Page Accueil -->
+        <section id="accueil" class="tab-content active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-main">FREQUENCY</span>
+                        <span class="title-sub">LAB</span>
+                    </h1>
+                    <p class="hero-tagline">Exploring sound, shaping frequencies</p>
+                    
+                    <!-- Manche de guitare interactif -->
+                    <div class="guitar-container">
+                        <div class="guitar-neck">
+                            <!-- Frettes -->
+                            <div class="fret"></div>
+                            <div class="fret"></div>
+                            <div class="fret"></div>
+                            <div class="fret"></div>
+                            <div class="fret"></div>
+                            
+                            <!-- Cordes -->
+                            <div class="string" data-frequency="82.41"></div>
+                            <div class="string" data-frequency="110"></div>
+                            <div class="string" data-frequency="146.83"></div>
+                            <div class="string" data-frequency="196"></div>
+                            <div class="string" data-frequency="246.94"></div>
+                            <div class="string" data-frequency="329.63"></div>
+                        </div>
+                        <p class="guitar-hint">Survolez les cordes avec votre souris</p>
+                    </div>
+                </div>
+                
+                <div class="hero-description">
+                    <div class="description-card">
+                        <h2>Bienvenue chez Frequency Lab</h2>
+                        <p>
+                            Un espace dédié à la création sonore où chaque fréquence trouve sa place. 
+                            Frequency Lab est un studio de musique indépendant qui explore les textures, 
+                            les ambiances et les émotions à travers le son.
+                        </p>
+                        <p>
+                            De la composition à la production, chaque projet est façonné avec passion 
+                            et attention aux détails, dans une atmosphère créative et authentique.
+                        </p>
+                        <div class="cta-buttons">
+                            <button class="btn-primary" data-navigate="projets">Découvrir les projets</button>
+                            <button class="btn-secondary" data-navigate="contact">Entrer en contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Projets -->
+        <section id="projets" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">Projets Musicaux</h2>
+                <p class="section-subtitle">Une sélection de créations sonores</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-artwork">
+                            <div class="artwork-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Neon Dreams</h3>
+                        <p class="project-genre">Synthwave • Électronique</p>
+                        <audio class="audio-player" controls>
+                            <source src="#" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <a href="https://soundcloud.com" target="_blank" class="project-link">
+                            <i class="fab fa-soundcloud"></i> Écouter sur SoundCloud
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-artwork">
+                            <div class="artwork-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Urban Echoes</h3>
+                        <p class="project-genre">Hip-Hop • Experimental</p>
+                        <audio class="audio-player" controls>
+                            <source src="#" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <a href="https://soundcloud.com" target="_blank" class="project-link">
+                            <i class="fab fa-soundcloud"></i> Écouter sur SoundCloud
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-artwork">
+                            <div class="artwork-icon">
+                                <i class="fas fa-guitar"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Velvet Skies</h3>
+                        <p class="project-genre">Ambient • Guitare</p>
+                        <audio class="audio-player" controls>
+                            <source src="#" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <a href="https://soundcloud.com" target="_blank" class="project-link">
+                            <i class="fab fa-soundcloud"></i> Écouter sur SoundCloud
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-artwork">
+                            <div class="artwork-icon">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Digital Sunset</h3>
+                        <p class="project-genre">Lo-Fi • Chill</p>
+                        <audio class="audio-player" controls>
+                            <source src="#" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <a href="https://soundcloud.com" target="_blank" class="project-link">
+                            <i class="fab fa-soundcloud"></i> Écouter sur SoundCloud
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-artwork">
+                            <div class="artwork-icon">
+                                <i class="fas fa-compact-disc"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Midnight Frequencies</h3>
+                        <p class="project-genre">Techno • Dark</p>
+                        <audio class="audio-player" controls>
+                            <source src="#" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <a href="https://soundcloud.com" target="_blank" class="project-link">
+                            <i class="fab fa-soundcloud"></i> Écouter sur SoundCloud
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="project-card">
+                    <div class="project-visual">
+                        <div class="project-artwork">
+                            <div class="artwork-icon">
+                                <i class="fas fa-drum"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Organic Pulse</h3>
+                        <p class="project-genre">World • Percussions</p>
+                        <audio class="audio-player" controls>
+                            <source src="#" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <a href="https://soundcloud.com" target="_blank" class="project-link">
+                            <i class="fab fa-soundcloud"></i> Écouter sur SoundCloud
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Le Studio -->
+        <section id="studio" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">Le Studio</h2>
+                <p class="section-subtitle">Un espace de création authentique</p>
+            </div>
+            
+            <div class="studio-content">
+                <div class="studio-block">
+                    <div class="studio-icon">
+                        <i class="fas fa-user-music"></i>
+                    </div>
+                    <h3>Loïc - Artiste & Producteur</h3>
+                    <p>
+                        Artiste indépendant passionné par la création sonore, Loïc explore les univers 
+                        musicaux avec une approche authentique et personnelle. De la composition à la 
+                        production, chaque étape du processus créatif est guidée par la recherche de 
+                        l'émotion et de l'originalité.
+                    </p>
+                    <p>
+                        Avec une sensibilité particulière pour les textures sonores et les atmosphères, 
+                        Loïc façonne des paysages musicaux qui invitent à l'exploration et à l'évasion. 
+                        Son approche artisanale privilégie la qualité et l'authenticité à chaque projet.
+                    </p>
+                </div>
+
+                <div class="studio-divider"></div>
+
+                <div class="studio-block">
+                    <div class="studio-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>Frequency Lab - Le Studio</h3>
+                    <p>
+                        Frequency Lab est un studio à domicile où l'atmosphère créative prime sur le reste. 
+                        Loin des standards industriels, c'est un espace intime dédié à l'expérimentation 
+                        et à la création libre, où chaque fréquence trouve sa résonance.
+                    </p>
+                    <p>
+                        Le studio est équipé pour capturer l'essence des idées musicales, de la conception 
+                        initiale jusqu'au mixage final. L'environnement familier permet une créativité sans 
+                        contraintes, favorisant l'émergence de sonorités uniques et personnelles.
+                    </p>
+                    <p>
+                        C'est dans cet espace que naissent des projets aux influences variées, toujours 
+                        guidés par la passion du son, le souci du détail et la recherche constante de 
+                        nouvelles textures auditives.
+                    </p>
+                </div>
+
+                <div class="studio-features">
+                    <div class="feature-item">
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Production & Mixage</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-microphone"></i>
+                        <span>Enregistrement</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-palette"></i>
+                        <span>Design Sonore</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-waveform-path"></i>
+                        <span>Sound Shaping</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Contact -->
+        <section id="contact" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Restons connectés</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        Envie de discuter d'un projet, d'une collaboration ou simplement d'échanger 
+                        sur la musique ? N'hésitez pas à me contacter via les réseaux sociaux ou par email.
+                    </p>
+                </div>
+
+                <div class="social-links">
+                    <a href="http://www.instagram.fr" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="http://www.facebook.fr" class="social-link facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="mailto:contact@frequencylab.studio" class="social-link email">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@frequencylab.studio</span>
+                    </a>
+                </div>
+
+                <div class="contact-footer">
+                    <p>© 2025 Frequency Lab - Tous droits réservés</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Cursor personnalisé -->
+    <div class="custom-cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
